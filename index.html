@@ -26,6 +26,7 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+            z-index: 999999;
         }
         .header-title{
             position: absolute;
@@ -53,14 +54,44 @@
             background-color: #043680;
             transition: 2s;
         }
+        .content-menu{
+            list-style-type: none;
+            position: absolute;
+            top: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: linear-gradient(#838484, transparent);
+            width: 100%;
+        }
+        .menu-item{
+            display: inline-block;
+        }
+        .menu-item > a{
+            padding: 0 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .menu-item > a:hover{
+            color: #5dd6f6;
+        }
     </style>
 </head>
 <body>
     <header class="container-fluid">
         <img src="./img/header.jpg" alt="Header">
         <img src="./img/progm.svg" alt="Progm: Conecta você ao mundo" class="img-logo">
-        <h1 class="header-title">Progm: Conectas você ao mundo</h1>
+        <h1 class="header-title">Progm: Conecta você ao mundo</h1>
         <button class="header-btn">Contate-nos</button>
+
+        <nav class="nav-menu">
+            <ul class="content-menu">
+                <li class="menu-item"><a href="">Home</a></li>
+                <li class="menu-item"><a href="">O que fazemos?</a></li>
+                <li class="menu-item"><a href="">Trabalhos</a></li>
+                <li class="menu-item"><a href="">Contato</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <main>
