@@ -75,6 +75,44 @@
         .menu-item > a:hover{
             color: #5dd6f6;
         }
+
+        .subtitle{
+            color: grey;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .subtitle > hr{
+            width: 5%;
+            color: #5dd6f6;
+            border: 1px #5dd6f6 solid;
+        }
+
+        main{
+            color: grey;
+        }
+
+        .img-work{
+            max-width: 25%;
+            background-color: #e1f3e1;
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-weight: bold;
+        }
+        .margin-bottom{
+            margin-bottom: 20px;
+        }
+        .btn-work{
+            color: white;
+            background-color: #5dd6f6;
+            border-radius: 30px;
+            padding: 5px 20px;
+        }
     </style>
 </head>
 <body>
@@ -95,8 +133,42 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container-fluid">
+        <div class="row margin-bottom">
+            <div class="col">
+                <h3 class="subtitle">O que fazemos <hr></h3>
+                <p class="text-center">
+                    Ume empresa idealizada por sonhadores e que tenta realizar o sonho de seus clientes<br>
+                    Nosso principal objetivo é conectar pessoas e empresas com todo o mundo por meio da internet
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <img class="img-fluid img-work" src="./img/websites.png" alt="WebSites">
+                <h4>WebSites</h4>
+                <p>
+                    Desenvolvemos o website da sua empresa<br>para que ela possa estar mais engajada e ser<br>encontrada por clientes do mundo inteiro
+                </p>
+                <button class="btn btn-work">Veja trabalhos</button>
+            </div>
+            <div class="col text-center">
+                <img class="img-fluid img-work" src="./img/aplicativos.png" alt="Aplicativos">
+                <h4>Aplicativos</h4>
+                <p>
+                    Trabalhos com as mais inúmeros plataformas,<br>garantindo que seu negócio possa estar<br>presente para todos seus potenciais clientes.
+                </p>
+                <button class="btn btn-work">Veja trabalhos</button>
+            </div>
+            <div class="col text-center">
+                <img class="img-fluid img-work" src="./img/softwares.png" alt="Softwares">
+                <h4>Softwares</h4>
+                <p>
+                    Todo negócio precisa de gerenciamento<br>adequado e relatórios de qualidade, nós<br>desenvolvemos as ferramentas ideiais para gestão.
+                </p>
+                <button class="btn btn-work">Veja trabalhos</button>
+            </div>
+        </div>
     </main>
 
     <footer>
