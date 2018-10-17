@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Progm - Conecta você ao mundo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
     <link rel="shortcut icon" href="./img/progm.png" type="image/x-icon">
 
     <style>
@@ -107,11 +110,81 @@
         .margin-bottom{
             margin-bottom: 20px;
         }
+        section>div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
         .btn-work{
             color: white;
             background-color: #5dd6f6;
             border-radius: 30px;
             padding: 5px 20px;
+        }
+        .bg-blue, .bg-blue .row{
+            background-color: #5dd6f6;
+            color: white;
+        }
+        .bg-blue h3{
+            color: white;
+        }
+        .bg-blue .subtitle > hr{
+            width: 5%;
+            color: white;
+            border: 1px white solid;
+        }
+        .btn-content-work span{
+            margin: 0;
+            background-color: white;
+            color: #5dd6f6;
+            padding: 8px 14px;
+            border: #5dd6f6 1px solid;
+            cursor: pointer;
+        }
+        .btn-content-work span:hover, .btn-content-work span.active:hover{
+            background-color: #5dd6f6;
+            transition: 1s;
+            color: white;
+            border: 1px #043680 solid;
+        }
+
+        .btn-content-work span:first-child{
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .btn-content-work span:last-child{
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .btn-content-work span.active{
+            background-color: #043680;
+            color: white;
+        }
+        .btn-content-work{
+            padding: 30px 0;
+        }
+        .job:hover{
+            cursor: pointer;
+        }
+        .job:hover img{
+            border-radius: 100%;
+            transition: 1s;
+            transform: scale(1.1);
+            filter: grayscale(1);
+        }
+        .icon-job{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 72px;
+            color: #5dd6f6;
+            font-weight: bold;
+            display: none;
+        }
+        .job:hover .icon-job{
+            display: block;
         }
     </style>
 </head>
@@ -134,41 +207,81 @@
     </header>
 
     <main class="container-fluid">
-        <div class="row margin-bottom">
-            <div class="col">
-                <h3 class="subtitle">O que fazemos <hr></h3>
-                <p class="text-center">
-                    Ume empresa idealizada por sonhadores e que tenta realizar o sonho de seus clientes<br>
-                    Nosso principal objetivo é conectar pessoas e empresas com todo o mundo por meio da internet
-                </p>
+        <section>
+            <div class="row margin-bottom">
+                <div class="col">
+                    <h3 class="subtitle">O que fazemos <hr></h3>
+                    <p class="text-center">
+                        Ume empresa idealizada por sonhadores e que tenta realizar o sonho de seus clientes<br>
+                        Nosso principal objetivo é conectar pessoas e empresas com todo o mundo por meio da internet
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <img class="img-fluid img-work" src="./img/websites.png" alt="WebSites">
-                <h4>WebSites</h4>
-                <p>
-                    Desenvolvemos o website da sua empresa<br>para que ela possa estar mais engajada e ser<br>encontrada por clientes do mundo inteiro
-                </p>
-                <button class="btn btn-work">Veja trabalhos</button>
+            <div class="row">
+                <div class="col text-center">
+                    <img class="img-fluid img-work" src="./img/websites.png" alt="WebSites">
+                    <h4>WebSites</h4>
+                    <p>
+                        Desenvolvemos o website da sua empresa<br>para que ela possa estar mais engajada e ser<br>encontrada por clientes do mundo inteiro
+                    </p>
+                    <button class="btn btn-work">Veja trabalhos</button>
+                </div>
+                <div class="col text-center">
+                    <img class="img-fluid img-work" src="./img/aplicativos.png" alt="Aplicativos">
+                    <h4>Aplicativos</h4>
+                    <p>
+                        Trabalhos com as mais inúmeros plataformas,<br>garantindo que seu negócio possa estar<br>presente para todos seus potenciais clientes.
+                    </p>
+                    <button class="btn btn-work">Veja trabalhos</button>
+                </div>
+                <div class="col text-center">
+                    <img class="img-fluid img-work" src="./img/softwares.png" alt="Softwares">
+                    <h4>Softwares</h4>
+                    <p>
+                        Todo negócio precisa de gerenciamento<br>adequado e relatórios de qualidade, nós<br>desenvolvemos as ferramentas ideiais para gestão.
+                    </p>
+                    <button class="btn btn-work">Veja trabalhos</button>
+                </div>
             </div>
-            <div class="col text-center">
-                <img class="img-fluid img-work" src="./img/aplicativos.png" alt="Aplicativos">
-                <h4>Aplicativos</h4>
-                <p>
-                    Trabalhos com as mais inúmeros plataformas,<br>garantindo que seu negócio possa estar<br>presente para todos seus potenciais clientes.
-                </p>
-                <button class="btn btn-work">Veja trabalhos</button>
+        </section>
+        <section class="bg-blue text-center">
+            <div class="row">
+                <div class="col">
+                    <h3 class="subtitle">Nossos Trabalhos <hr></h3>
+
+                    <p>
+                        Veja alguns dos nossos últimos trabalhos desenvolvidos
+                    </p>
+                </div>
             </div>
-            <div class="col text-center">
-                <img class="img-fluid img-work" src="./img/softwares.png" alt="Softwares">
-                <h4>Softwares</h4>
-                <p>
-                    Todo negócio precisa de gerenciamento<br>adequado e relatórios de qualidade, nós<br>desenvolvemos as ferramentas ideiais para gestão.
-                </p>
-                <button class="btn btn-work">Veja trabalhos</button>
+            <div class="row">
+                <div class="col">
+                    <div class="btn-content-work">
+                        <span class="active">WebSites</span>
+                        <span>Aplicativos</span>
+                        <span>Softwares</span>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="row justify-content-md-center">
+                <div class="col-2 job">
+                    <img src="./img/jobs/job1.jpg" alt="Job" class="img-fluid img-job">
+                    <i class="far fa-eye icon-job"></i>
+                </div>
+                <div class="col-2 job">
+                    <img src="./img/jobs/job2.jpg" alt="Job" class="img-fluid img-job">
+                    <i class="far fa-eye icon-job"></i>
+                </div>
+                <div class="col-2 job">
+                    <img src="./img/jobs/job3.jpg" alt="Job" class="img-fluid img-job">
+                    <i class="far fa-eye icon-job"></i>
+                </div>
+                <div class="col-2 job">
+                    <img src="./img/jobs/job4.jpg" alt="Job" class="img-fluid img-job">
+                    <i class="far fa-eye icon-job"></i>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
