@@ -124,13 +124,16 @@
             background-color: #5dd6f6;
             color: white;
         }
-        .bg-blue h3{
+        .bg-blue h3, footer .subtitle{
             color: white;
         }
-        .bg-blue .subtitle > hr{
+        .bg-blue .subtitle > hr, footer .subtitle > hr{
             width: 5%;
             color: white;
             border: 1px white solid;
+        }
+        footer .subtitle > hr{
+            width: 10%;
         }
         .btn-content-work span{
             margin: 0;
@@ -185,6 +188,33 @@
         }
         .job:hover .icon-job{
             display: block;
+        }
+
+        footer img{
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .form-control{
+            background-color: #042658;
+            border-color: #042658;
+        }
+
+        .form-group{
+            margin: 0;
+            margin-bottom: 3px;
+        }
+
+        button.btn-submit{
+            background-color: #5dd6f6;
+            color: white;
+            font-weight: bold;
+        }
+        .copy{
+            background-color: #042658;
+            color: white;
+            padding: 8px;
         }
     </style>
 </head>
@@ -284,11 +314,76 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="subtitle">Sobre nós <hr></h5>
+                    <img src="./img/progm.svg" alt="Progm: Conecta você ao mundo" class="img-fluid">
+                    <p class="text-justify">
+                        Nós somos uma empresa idealizada por sonhadores e que tenta realizar o sonho de seus clientes. Nosso principal objetivo é conectar pessoas e empresas com todo o mundo por meio da internet. A Progm está disposta a enfrentar os mais variados desafios para entregar soluções tecnológicas de qualidade e que satisfaçam a vontade do cliente.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5 class="subtitle">Deixe-nos uma mensagem <hr></h5>
+                    <form action="">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="nome" placeholder="Seu nome...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="email" placeholder="Seu e-mail...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Sua mensagem..." name="mensagem" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col text-center">
+                    <h5 class="subtitle">Contate-nos <hr></h5>
 
+                    <address>
+                        Rua Silviano Brandão, 368<br>
+                        Congonhal - MG, 37584-000<br>
+                        E-mail: contato@progm.com.br<br>
+                        Telefone: (35) 99867-2990
+                    </address>
+                </div>
+            </div>
+        </section>
+        <div class="row copy">
+            <div class="col text-center">
+                &copy; Todos os direitos reservados
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<style>
+    footer{
+        background-color: #043680;
+        color: #838484;
+    }
+</style>
